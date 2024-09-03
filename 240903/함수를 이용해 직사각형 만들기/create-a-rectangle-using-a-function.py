@@ -1,9 +1,11 @@
-def rect(a, b):
-    for i in range (a):
-        print('1'*b)
+# 변수 선언 및 입력:
+row_num, col_num = tuple(map(int, input().split()))
 
-c = input()
-a = int(c[0])
-b = int(c[2])
 
-rect(a,b)
+# n * m 크기의 사각형을 출력합니다.
+def print_rect(n, m):
+    for _ in range(n):
+        print("1" * m)
+
+
+print_rect(row_num, col_num)
